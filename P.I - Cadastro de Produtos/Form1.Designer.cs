@@ -29,6 +29,7 @@ namespace P.I___Cadastro_de_Produtos
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -56,6 +57,27 @@ namespace P.I___Cadastro_de_Produtos
             this.btnLimpar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnSalvar = new System.Windows.Forms.Button();
+            this.cmbGrupo = new System.Windows.Forms.ComboBox();
+            this.erpNome = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erpCodigo = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erpEan = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erpTipo = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erpQuantidade = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erpCusto = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erpVenda = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erpEstoque = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erpFabricante = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erpMarca = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.erpNome)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpCodigo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpEan)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpTipo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpQuantidade)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpCusto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpVenda)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpEstoque)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpFabricante)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpMarca)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -189,7 +211,7 @@ namespace P.I___Cadastro_de_Produtos
             // 
             // txtGrupo
             // 
-            this.txtGrupo.Location = new System.Drawing.Point(306, 180);
+            this.txtGrupo.Location = new System.Drawing.Point(595, 95);
             this.txtGrupo.Name = "txtGrupo";
             this.txtGrupo.Size = new System.Drawing.Size(159, 20);
             this.txtGrupo.TabIndex = 27;
@@ -281,11 +303,68 @@ namespace P.I___Cadastro_de_Produtos
             this.btnSalvar.UseVisualStyleBackColor = true;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
+            // cmbGrupo
+            // 
+            this.cmbGrupo.FormattingEnabled = true;
+            this.cmbGrupo.Items.AddRange(new object[] {
+            "Grupo A",
+            "Grupo B",
+            "Grupo C"});
+            this.cmbGrupo.Location = new System.Drawing.Point(306, 180);
+            this.cmbGrupo.Name = "cmbGrupo";
+            this.cmbGrupo.Size = new System.Drawing.Size(159, 21);
+            this.cmbGrupo.TabIndex = 38;
+            this.cmbGrupo.SelectedIndexChanged += new System.EventHandler(this.cmbGrupo_SelectedIndexChanged);
+            this.cmbGrupo.SelectedValueChanged += new System.EventHandler(this.cmbGrupo_SelectedValueChanged);
+            this.cmbGrupo.TextChanged += new System.EventHandler(this.cmbGrupo_TextChanged);
+            this.cmbGrupo.Enter += new System.EventHandler(this.cmbGrupo_Enter);
+            // 
+            // erpNome
+            // 
+            this.erpNome.ContainerControl = this;
+            // 
+            // erpCodigo
+            // 
+            this.erpCodigo.ContainerControl = this;
+            // 
+            // erpEan
+            // 
+            this.erpEan.ContainerControl = this;
+            // 
+            // erpTipo
+            // 
+            this.erpTipo.ContainerControl = this;
+            // 
+            // erpQuantidade
+            // 
+            this.erpQuantidade.ContainerControl = this;
+            // 
+            // erpCusto
+            // 
+            this.erpCusto.ContainerControl = this;
+            // 
+            // erpVenda
+            // 
+            this.erpVenda.ContainerControl = this;
+            // 
+            // erpEstoque
+            // 
+            this.erpEstoque.ContainerControl = this;
+            // 
+            // erpFabricante
+            // 
+            this.erpFabricante.ContainerControl = this;
+            // 
+            // erpMarca
+            // 
+            this.erpMarca.ContainerControl = this;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.cmbGrupo);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnLimpar);
@@ -315,6 +394,16 @@ namespace P.I___Cadastro_de_Produtos
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.erpNome)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpCodigo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpEan)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpTipo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpQuantidade)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpCusto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpVenda)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpEstoque)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpFabricante)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpMarca)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -349,6 +438,17 @@ namespace P.I___Cadastro_de_Produtos
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnSalvar;
+        private System.Windows.Forms.ComboBox cmbGrupo;
+        private System.Windows.Forms.ErrorProvider erpNome;
+        private System.Windows.Forms.ErrorProvider erpCodigo;
+        private System.Windows.Forms.ErrorProvider erpEan;
+        private System.Windows.Forms.ErrorProvider erpTipo;
+        private System.Windows.Forms.ErrorProvider erpQuantidade;
+        private System.Windows.Forms.ErrorProvider erpCusto;
+        private System.Windows.Forms.ErrorProvider erpVenda;
+        private System.Windows.Forms.ErrorProvider erpEstoque;
+        private System.Windows.Forms.ErrorProvider erpFabricante;
+        private System.Windows.Forms.ErrorProvider erpMarca;
     }
 }
 
