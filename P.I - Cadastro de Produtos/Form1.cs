@@ -89,9 +89,38 @@ namespace P.I___Cadastro_de_Produtos
             }
             else
             {
+                string nome, ean, cod, tipo, quant, custo, venda, estoque, grupo, fabri, marca;
+                nome = txtNome.Text;
+                cod = txtCodigo.Text;
+                tipo = txtTipo.Text;
+                ean = txtEan.Text;
+                quant = txtQuantidade.Text;
+                custo = txtCusto.Text;
+                venda = txtVenda.Text;
+                estoque = txtEstoque.Text;
+                grupo = txtGrupo.Text;
+                fabri = txtFabricante.Text;
+                marca = txtMarca.Text;
+
+                string mensagem, title;
+                mensagem = "Nome: " + nome + "\nCódigo: " + cod + "\nEAN: " + ean + "\nTipo: " + tipo + "\nQuantidade: " + quant + "\nCusto: " + custo + "\nVenda: " + venda + "\nEstoque: " + estoque + "\nGrupo: " + grupo + "\nFabricante: " + fabri + "\nMarca: " + marca;
+                title = "Confirme se os dados inseridos estão corretos:";
+
                 erpMarca.SetError(txtMarca, "");
-                MessageBox.Show("Nome: " + txtNome.Text + "Codigo: " + txtCodigo.Text + "EAN: " + txtEan.Text + "Tipo: " + txtTipo.Text + "Quantidade: " + txtQuantidade.Text + "Custo: " + txtCusto.Text
-                + "Venda: " + txtVenda.Text + "Estoque: " + txtEstoque.Text + "Grupo: " + txtGrupo.Text + "Observações: " + txtObservacoes.Text + "Fabricante: " + txtFabricante.Text + "Marca: " + txtMarca.Text);
+                //MessageBox.Show("Nome: " + txtNome.Text + "Codigo: " + txtCodigo.Text + "EAN: " + txtEan.Text + "Tipo: " + txtTipo.Text + "Quantidade: " + txtQuantidade.Text + "Custo: " + txtCusto.Text
+                //+ "Venda: " + txtVenda.Text + "Estoque: " + txtEstoque.Text + "Grupo: " + txtGrupo.Text + "Observações: " + txtObservacoes.Text + "Fabricante: " + txtFabricante.Text + "Marca: " + txtMarca.Text);
+
+                //MessageBox.Show("Nome: "+ nome + "\nCódigo: "+ cod + "\nEAN: "+ ean + "\nTipo: "+ tipo + "\nQuantidade: "+ quant + "\nCusto: "+ custo + "\nVenda: "+ venda + "\nEstoque: "+ estoque + "\nGrupo: "+ grupo + "\nFabricante: "+ fabri + "\nMarca: "+ marca);
+
+                DialogResult result = MessageBox.Show(mensagem , title, MessageBoxButtons.YesNo);
+                if (result == DialogResult.Yes)
+                {
+                    MessageBox.Show("Dados Salvos!");
+                }
+                else
+                {
+                    //Volta
+                }
             }
         }
 
@@ -131,7 +160,7 @@ namespace P.I___Cadastro_de_Produtos
 
         private void cmbGrupo_Enter(object sender, EventArgs e)
         {
-            cmbGrupo.SelectedIndex = 0;
+            //cmbGrupo.SelectedIndex = 0;
         }
 
         private void cmbGrupo_SelectedValueChanged(object sender, EventArgs e)
