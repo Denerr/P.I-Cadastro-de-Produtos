@@ -1,7 +1,7 @@
 ﻿
 namespace P.I___Cadastro_de_Produtos
 {
-    partial class Form1
+    partial class cadastroProdutos
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -393,7 +393,7 @@ namespace P.I___Cadastro_de_Produtos
             this.txtGrupo.Size = new System.Drawing.Size(183, 26);
             this.txtGrupo.TabIndex = 27;
             // 
-            // Form1
+            // cadastroProdutos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -427,7 +427,7 @@ namespace P.I___Cadastro_de_Produtos
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
-            this.Name = "Form1";
+            this.Name = "cadastroProdutos";
             this.Text = "Cadastro de Produtos";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.erpNome)).EndInit();

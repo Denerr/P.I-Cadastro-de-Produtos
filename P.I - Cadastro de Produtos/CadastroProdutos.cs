@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace P.I___Cadastro_de_Produtos
 {
-    public partial class Form1 : Form
+    public partial class cadastroProdutos : Form
     {
-        public Form1()
+        public cadastroProdutos()
         {
             InitializeComponent();
         }
